@@ -1,0 +1,530 @@
+rm -f bin/* bin/*.o
+/usr/local/cuda/bin/nvcc -ccbin g++ -I./lib -I./lib/UtilNPP -m64 --threads 0 -gencode arch=compute_86,code=compute_86 -o bin/CannyEdge.o -c src/CannyEdge.cpp
+/usr/local/cuda/bin/nvcc -ccbin g++ -m64 -gencode arch=compute_86,code=compute_86 -o bin/CannyEdge bin/CannyEdge.o -lnppisu_static -lnppif_static -lnppc_static -lculibos -lfreeimage
+mkdir -p bin/x86_64/linux/release
+cp bin/CannyEdge bin/x86_64/linux/release
+bin/CannyEdge -in=data/input -out=data/output
+bin/CannyEdge Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 12.2.2
+  CUDA Driver  Version: 12.2
+  CUDA Runtime Version: 12.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+Processing: "data/input/1.1.01.pgm"
+CannyEdge opened: "data/input/1.1.01.pgm" successfully!
+Saved image: "data/output/1.1.01_CannyEdge.pgm"
+Processing: "data/input/1.1.02.pgm"
+CannyEdge opened: "data/input/1.1.02.pgm" successfully!
+Saved image: "data/output/1.1.02_CannyEdge.pgm"
+Processing: "data/input/1.1.03.pgm"
+CannyEdge opened: "data/input/1.1.03.pgm" successfully!
+Saved image: "data/output/1.1.03_CannyEdge.pgm"
+Processing: "data/input/1.1.04.pgm"
+CannyEdge opened: "data/input/1.1.04.pgm" successfully!
+Saved image: "data/output/1.1.04_CannyEdge.pgm"
+Processing: "data/input/1.1.05.pgm"
+CannyEdge opened: "data/input/1.1.05.pgm" successfully!
+Saved image: "data/output/1.1.05_CannyEdge.pgm"
+Processing: "data/input/1.1.06.pgm"
+CannyEdge opened: "data/input/1.1.06.pgm" successfully!
+Saved image: "data/output/1.1.06_CannyEdge.pgm"
+Processing: "data/input/1.1.07.pgm"
+CannyEdge opened: "data/input/1.1.07.pgm" successfully!
+Saved image: "data/output/1.1.07_CannyEdge.pgm"
+Processing: "data/input/1.1.08.pgm"
+CannyEdge opened: "data/input/1.1.08.pgm" successfully!
+Saved image: "data/output/1.1.08_CannyEdge.pgm"
+Processing: "data/input/1.1.09.pgm"
+CannyEdge opened: "data/input/1.1.09.pgm" successfully!
+Saved image: "data/output/1.1.09_CannyEdge.pgm"
+Processing: "data/input/1.1.10.pgm"
+CannyEdge opened: "data/input/1.1.10.pgm" successfully!
+Saved image: "data/output/1.1.10_CannyEdge.pgm"
+Processing: "data/input/1.1.11.pgm"
+CannyEdge opened: "data/input/1.1.11.pgm" successfully!
+Saved image: "data/output/1.1.11_CannyEdge.pgm"
+Processing: "data/input/1.1.12.pgm"
+CannyEdge opened: "data/input/1.1.12.pgm" successfully!
+Saved image: "data/output/1.1.12_CannyEdge.pgm"
+Processing: "data/input/1.1.13.pgm"
+CannyEdge opened: "data/input/1.1.13.pgm" successfully!
+Saved image: "data/output/1.1.13_CannyEdge.pgm"
+Processing: "data/input/1.2.01.pgm"
+CannyEdge opened: "data/input/1.2.01.pgm" successfully!
+Saved image: "data/output/1.2.01_CannyEdge.pgm"
+Processing: "data/input/1.2.02.pgm"
+CannyEdge opened: "data/input/1.2.02.pgm" successfully!
+Saved image: "data/output/1.2.02_CannyEdge.pgm"
+Processing: "data/input/1.2.03.pgm"
+CannyEdge opened: "data/input/1.2.03.pgm" successfully!
+Saved image: "data/output/1.2.03_CannyEdge.pgm"
+Processing: "data/input/1.2.04.pgm"
+CannyEdge opened: "data/input/1.2.04.pgm" successfully!
+Saved image: "data/output/1.2.04_CannyEdge.pgm"
+Processing: "data/input/1.2.05.pgm"
+CannyEdge opened: "data/input/1.2.05.pgm" successfully!
+Saved image: "data/output/1.2.05_CannyEdge.pgm"
+Processing: "data/input/1.2.06.pgm"
+CannyEdge opened: "data/input/1.2.06.pgm" successfully!
+Saved image: "data/output/1.2.06_CannyEdge.pgm"
+Processing: "data/input/1.2.07.pgm"
+CannyEdge opened: "data/input/1.2.07.pgm" successfully!
+Saved image: "data/output/1.2.07_CannyEdge.pgm"
+Processing: "data/input/1.2.08.pgm"
+CannyEdge opened: "data/input/1.2.08.pgm" successfully!
+Saved image: "data/output/1.2.08_CannyEdge.pgm"
+Processing: "data/input/1.2.09.pgm"
+CannyEdge opened: "data/input/1.2.09.pgm" successfully!
+Saved image: "data/output/1.2.09_CannyEdge.pgm"
+Processing: "data/input/1.2.10.pgm"
+CannyEdge opened: "data/input/1.2.10.pgm" successfully!
+Saved image: "data/output/1.2.10_CannyEdge.pgm"
+Processing: "data/input/1.2.11.pgm"
+CannyEdge opened: "data/input/1.2.11.pgm" successfully!
+Saved image: "data/output/1.2.11_CannyEdge.pgm"
+Processing: "data/input/1.2.12.pgm"
+CannyEdge opened: "data/input/1.2.12.pgm" successfully!
+Saved image: "data/output/1.2.12_CannyEdge.pgm"
+Processing: "data/input/1.2.13.pgm"
+CannyEdge opened: "data/input/1.2.13.pgm" successfully!
+Saved image: "data/output/1.2.13_CannyEdge.pgm"
+Processing: "data/input/1.3.01.pgm"
+CannyEdge opened: "data/input/1.3.01.pgm" successfully!
+Saved image: "data/output/1.3.01_CannyEdge.pgm"
+Processing: "data/input/1.3.02.pgm"
+CannyEdge opened: "data/input/1.3.02.pgm" successfully!
+Saved image: "data/output/1.3.02_CannyEdge.pgm"
+Processing: "data/input/1.3.03.pgm"
+CannyEdge opened: "data/input/1.3.03.pgm" successfully!
+Saved image: "data/output/1.3.03_CannyEdge.pgm"
+Processing: "data/input/1.3.04.pgm"
+CannyEdge opened: "data/input/1.3.04.pgm" successfully!
+Saved image: "data/output/1.3.04_CannyEdge.pgm"
+Processing: "data/input/1.3.05.pgm"
+CannyEdge opened: "data/input/1.3.05.pgm" successfully!
+Saved image: "data/output/1.3.05_CannyEdge.pgm"
+Processing: "data/input/1.3.06.pgm"
+CannyEdge opened: "data/input/1.3.06.pgm" successfully!
+Saved image: "data/output/1.3.06_CannyEdge.pgm"
+Processing: "data/input/1.3.07.pgm"
+CannyEdge opened: "data/input/1.3.07.pgm" successfully!
+Saved image: "data/output/1.3.07_CannyEdge.pgm"
+Processing: "data/input/1.3.08.pgm"
+CannyEdge opened: "data/input/1.3.08.pgm" successfully!
+Saved image: "data/output/1.3.08_CannyEdge.pgm"
+Processing: "data/input/1.3.09.pgm"
+CannyEdge opened: "data/input/1.3.09.pgm" successfully!
+Saved image: "data/output/1.3.09_CannyEdge.pgm"
+Processing: "data/input/1.3.10.pgm"
+CannyEdge opened: "data/input/1.3.10.pgm" successfully!
+Saved image: "data/output/1.3.10_CannyEdge.pgm"
+Processing: "data/input/1.3.11.pgm"
+CannyEdge opened: "data/input/1.3.11.pgm" successfully!
+Saved image: "data/output/1.3.11_CannyEdge.pgm"
+Processing: "data/input/1.3.12.pgm"
+CannyEdge opened: "data/input/1.3.12.pgm" successfully!
+Saved image: "data/output/1.3.12_CannyEdge.pgm"
+Processing: "data/input/1.3.13.pgm"
+CannyEdge opened: "data/input/1.3.13.pgm" successfully!
+Saved image: "data/output/1.3.13_CannyEdge.pgm"
+Processing: "data/input/1.4.01.pgm"
+CannyEdge opened: "data/input/1.4.01.pgm" successfully!
+Saved image: "data/output/1.4.01_CannyEdge.pgm"
+Processing: "data/input/1.4.02.pgm"
+CannyEdge opened: "data/input/1.4.02.pgm" successfully!
+Saved image: "data/output/1.4.02_CannyEdge.pgm"
+Processing: "data/input/1.4.03.pgm"
+CannyEdge opened: "data/input/1.4.03.pgm" successfully!
+Saved image: "data/output/1.4.03_CannyEdge.pgm"
+Processing: "data/input/1.4.04.pgm"
+CannyEdge opened: "data/input/1.4.04.pgm" successfully!
+Saved image: "data/output/1.4.04_CannyEdge.pgm"
+Processing: "data/input/1.4.05.pgm"
+CannyEdge opened: "data/input/1.4.05.pgm" successfully!
+Saved image: "data/output/1.4.05_CannyEdge.pgm"
+Processing: "data/input/1.4.06.pgm"
+CannyEdge opened: "data/input/1.4.06.pgm" successfully!
+Saved image: "data/output/1.4.06_CannyEdge.pgm"
+Processing: "data/input/1.4.07.pgm"
+CannyEdge opened: "data/input/1.4.07.pgm" successfully!
+Saved image: "data/output/1.4.07_CannyEdge.pgm"
+Processing: "data/input/1.4.08.pgm"
+CannyEdge opened: "data/input/1.4.08.pgm" successfully!
+Saved image: "data/output/1.4.08_CannyEdge.pgm"
+Processing: "data/input/1.4.09.pgm"
+CannyEdge opened: "data/input/1.4.09.pgm" successfully!
+Saved image: "data/output/1.4.09_CannyEdge.pgm"
+Processing: "data/input/1.4.10.pgm"
+CannyEdge opened: "data/input/1.4.10.pgm" successfully!
+Saved image: "data/output/1.4.10_CannyEdge.pgm"
+Processing: "data/input/1.4.11.pgm"
+CannyEdge opened: "data/input/1.4.11.pgm" successfully!
+Saved image: "data/output/1.4.11_CannyEdge.pgm"
+Processing: "data/input/1.4.12.pgm"
+CannyEdge opened: "data/input/1.4.12.pgm" successfully!
+Saved image: "data/output/1.4.12_CannyEdge.pgm"
+Processing: "data/input/1.5.01.pgm"
+CannyEdge opened: "data/input/1.5.01.pgm" successfully!
+Saved image: "data/output/1.5.01_CannyEdge.pgm"
+Processing: "data/input/1.5.02.pgm"
+CannyEdge opened: "data/input/1.5.02.pgm" successfully!
+Saved image: "data/output/1.5.02_CannyEdge.pgm"
+Processing: "data/input/1.5.03.pgm"
+CannyEdge opened: "data/input/1.5.03.pgm" successfully!
+Saved image: "data/output/1.5.03_CannyEdge.pgm"
+Processing: "data/input/1.5.04.pgm"
+CannyEdge opened: "data/input/1.5.04.pgm" successfully!
+Saved image: "data/output/1.5.04_CannyEdge.pgm"
+Processing: "data/input/1.5.05.pgm"
+CannyEdge opened: "data/input/1.5.05.pgm" successfully!
+Saved image: "data/output/1.5.05_CannyEdge.pgm"
+Processing: "data/input/1.5.06.pgm"
+CannyEdge opened: "data/input/1.5.06.pgm" successfully!
+Saved image: "data/output/1.5.06_CannyEdge.pgm"
+Processing: "data/input/1.5.07.pgm"
+CannyEdge opened: "data/input/1.5.07.pgm" successfully!
+Saved image: "data/output/1.5.07_CannyEdge.pgm"
+Processing: "data/input/4.1.01.pgm"
+CannyEdge opened: "data/input/4.1.01.pgm" successfully!
+Saved image: "data/output/4.1.01_CannyEdge.pgm"
+Processing: "data/input/4.1.02.pgm"
+CannyEdge opened: "data/input/4.1.02.pgm" successfully!
+Saved image: "data/output/4.1.02_CannyEdge.pgm"
+Processing: "data/input/4.1.03.pgm"
+CannyEdge opened: "data/input/4.1.03.pgm" successfully!
+Saved image: "data/output/4.1.03_CannyEdge.pgm"
+Processing: "data/input/4.1.04.pgm"
+CannyEdge opened: "data/input/4.1.04.pgm" successfully!
+Saved image: "data/output/4.1.04_CannyEdge.pgm"
+Processing: "data/input/4.1.05.pgm"
+CannyEdge opened: "data/input/4.1.05.pgm" successfully!
+Saved image: "data/output/4.1.05_CannyEdge.pgm"
+Processing: "data/input/4.1.06.pgm"
+CannyEdge opened: "data/input/4.1.06.pgm" successfully!
+Saved image: "data/output/4.1.06_CannyEdge.pgm"
+Processing: "data/input/4.1.07.pgm"
+CannyEdge opened: "data/input/4.1.07.pgm" successfully!
+Saved image: "data/output/4.1.07_CannyEdge.pgm"
+Processing: "data/input/4.1.08.pgm"
+CannyEdge opened: "data/input/4.1.08.pgm" successfully!
+Saved image: "data/output/4.1.08_CannyEdge.pgm"
+Processing: "data/input/4.2.01.pgm"
+CannyEdge opened: "data/input/4.2.01.pgm" successfully!
+Saved image: "data/output/4.2.01_CannyEdge.pgm"
+Processing: "data/input/4.2.03.pgm"
+CannyEdge opened: "data/input/4.2.03.pgm" successfully!
+Saved image: "data/output/4.2.03_CannyEdge.pgm"
+Processing: "data/input/4.2.05.pgm"
+CannyEdge opened: "data/input/4.2.05.pgm" successfully!
+Saved image: "data/output/4.2.05_CannyEdge.pgm"
+Processing: "data/input/4.2.06.pgm"
+CannyEdge opened: "data/input/4.2.06.pgm" successfully!
+Saved image: "data/output/4.2.06_CannyEdge.pgm"
+Processing: "data/input/4.2.07.pgm"
+CannyEdge opened: "data/input/4.2.07.pgm" successfully!
+Saved image: "data/output/4.2.07_CannyEdge.pgm"
+Processing: "data/input/5.1.09.pgm"
+CannyEdge opened: "data/input/5.1.09.pgm" successfully!
+Saved image: "data/output/5.1.09_CannyEdge.pgm"
+Processing: "data/input/5.1.10.pgm"
+CannyEdge opened: "data/input/5.1.10.pgm" successfully!
+Saved image: "data/output/5.1.10_CannyEdge.pgm"
+Processing: "data/input/5.1.11.pgm"
+CannyEdge opened: "data/input/5.1.11.pgm" successfully!
+Saved image: "data/output/5.1.11_CannyEdge.pgm"
+Processing: "data/input/5.1.12.pgm"
+CannyEdge opened: "data/input/5.1.12.pgm" successfully!
+Saved image: "data/output/5.1.12_CannyEdge.pgm"
+Processing: "data/input/5.1.13.pgm"
+CannyEdge opened: "data/input/5.1.13.pgm" successfully!
+Saved image: "data/output/5.1.13_CannyEdge.pgm"
+Processing: "data/input/5.1.14.pgm"
+CannyEdge opened: "data/input/5.1.14.pgm" successfully!
+Saved image: "data/output/5.1.14_CannyEdge.pgm"
+Processing: "data/input/5.2.08.pgm"
+CannyEdge opened: "data/input/5.2.08.pgm" successfully!
+Saved image: "data/output/5.2.08_CannyEdge.pgm"
+Processing: "data/input/5.2.09.pgm"
+CannyEdge opened: "data/input/5.2.09.pgm" successfully!
+Saved image: "data/output/5.2.09_CannyEdge.pgm"
+Processing: "data/input/5.2.10.pgm"
+CannyEdge opened: "data/input/5.2.10.pgm" successfully!
+Saved image: "data/output/5.2.10_CannyEdge.pgm"
+Processing: "data/input/5.3.01.pgm"
+CannyEdge opened: "data/input/5.3.01.pgm" successfully!
+Saved image: "data/output/5.3.01_CannyEdge.pgm"
+Processing: "data/input/5.3.02.pgm"
+CannyEdge opened: "data/input/5.3.02.pgm" successfully!
+Saved image: "data/output/5.3.02_CannyEdge.pgm"
+Processing: "data/input/6.1.01.pgm"
+CannyEdge opened: "data/input/6.1.01.pgm" successfully!
+Saved image: "data/output/6.1.01_CannyEdge.pgm"
+Processing: "data/input/6.1.02.pgm"
+CannyEdge opened: "data/input/6.1.02.pgm" successfully!
+Saved image: "data/output/6.1.02_CannyEdge.pgm"
+Processing: "data/input/6.1.03.pgm"
+CannyEdge opened: "data/input/6.1.03.pgm" successfully!
+Saved image: "data/output/6.1.03_CannyEdge.pgm"
+Processing: "data/input/6.1.04.pgm"
+CannyEdge opened: "data/input/6.1.04.pgm" successfully!
+Saved image: "data/output/6.1.04_CannyEdge.pgm"
+Processing: "data/input/6.1.05.pgm"
+CannyEdge opened: "data/input/6.1.05.pgm" successfully!
+Saved image: "data/output/6.1.05_CannyEdge.pgm"
+Processing: "data/input/6.1.06.pgm"
+CannyEdge opened: "data/input/6.1.06.pgm" successfully!
+Saved image: "data/output/6.1.06_CannyEdge.pgm"
+Processing: "data/input/6.1.07.pgm"
+CannyEdge opened: "data/input/6.1.07.pgm" successfully!
+Saved image: "data/output/6.1.07_CannyEdge.pgm"
+Processing: "data/input/6.1.08.pgm"
+CannyEdge opened: "data/input/6.1.08.pgm" successfully!
+Saved image: "data/output/6.1.08_CannyEdge.pgm"
+Processing: "data/input/6.1.09.pgm"
+CannyEdge opened: "data/input/6.1.09.pgm" successfully!
+Saved image: "data/output/6.1.09_CannyEdge.pgm"
+Processing: "data/input/6.1.10.pgm"
+CannyEdge opened: "data/input/6.1.10.pgm" successfully!
+Saved image: "data/output/6.1.10_CannyEdge.pgm"
+Processing: "data/input/6.1.11.pgm"
+CannyEdge opened: "data/input/6.1.11.pgm" successfully!
+Saved image: "data/output/6.1.11_CannyEdge.pgm"
+Processing: "data/input/6.1.12.pgm"
+CannyEdge opened: "data/input/6.1.12.pgm" successfully!
+Saved image: "data/output/6.1.12_CannyEdge.pgm"
+Processing: "data/input/6.1.13.pgm"
+CannyEdge opened: "data/input/6.1.13.pgm" successfully!
+Saved image: "data/output/6.1.13_CannyEdge.pgm"
+Processing: "data/input/6.1.14.pgm"
+CannyEdge opened: "data/input/6.1.14.pgm" successfully!
+Saved image: "data/output/6.1.14_CannyEdge.pgm"
+Processing: "data/input/6.1.15.pgm"
+CannyEdge opened: "data/input/6.1.15.pgm" successfully!
+Saved image: "data/output/6.1.15_CannyEdge.pgm"
+Processing: "data/input/6.1.16.pgm"
+CannyEdge opened: "data/input/6.1.16.pgm" successfully!
+Saved image: "data/output/6.1.16_CannyEdge.pgm"
+Processing: "data/input/6.2.01.pgm"
+CannyEdge opened: "data/input/6.2.01.pgm" successfully!
+Saved image: "data/output/6.2.01_CannyEdge.pgm"
+Processing: "data/input/6.2.02.pgm"
+CannyEdge opened: "data/input/6.2.02.pgm" successfully!
+Saved image: "data/output/6.2.02_CannyEdge.pgm"
+Processing: "data/input/6.2.03.pgm"
+CannyEdge opened: "data/input/6.2.03.pgm" successfully!
+Saved image: "data/output/6.2.03_CannyEdge.pgm"
+Processing: "data/input/6.2.04.pgm"
+CannyEdge opened: "data/input/6.2.04.pgm" successfully!
+Saved image: "data/output/6.2.04_CannyEdge.pgm"
+Processing: "data/input/6.2.05.pgm"
+CannyEdge opened: "data/input/6.2.05.pgm" successfully!
+Saved image: "data/output/6.2.05_CannyEdge.pgm"
+Processing: "data/input/6.2.06.pgm"
+CannyEdge opened: "data/input/6.2.06.pgm" successfully!
+Saved image: "data/output/6.2.06_CannyEdge.pgm"
+Processing: "data/input/6.2.07.pgm"
+CannyEdge opened: "data/input/6.2.07.pgm" successfully!
+Saved image: "data/output/6.2.07_CannyEdge.pgm"
+Processing: "data/input/6.2.08.pgm"
+CannyEdge opened: "data/input/6.2.08.pgm" successfully!
+Saved image: "data/output/6.2.08_CannyEdge.pgm"
+Processing: "data/input/6.2.09.pgm"
+CannyEdge opened: "data/input/6.2.09.pgm" successfully!
+Saved image: "data/output/6.2.09_CannyEdge.pgm"
+Processing: "data/input/6.2.10.pgm"
+CannyEdge opened: "data/input/6.2.10.pgm" successfully!
+Saved image: "data/output/6.2.10_CannyEdge.pgm"
+Processing: "data/input/6.2.11.pgm"
+CannyEdge opened: "data/input/6.2.11.pgm" successfully!
+Saved image: "data/output/6.2.11_CannyEdge.pgm"
+Processing: "data/input/6.2.12.pgm"
+CannyEdge opened: "data/input/6.2.12.pgm" successfully!
+Saved image: "data/output/6.2.12_CannyEdge.pgm"
+Processing: "data/input/6.2.13.pgm"
+CannyEdge opened: "data/input/6.2.13.pgm" successfully!
+Saved image: "data/output/6.2.13_CannyEdge.pgm"
+Processing: "data/input/6.2.14.pgm"
+CannyEdge opened: "data/input/6.2.14.pgm" successfully!
+Saved image: "data/output/6.2.14_CannyEdge.pgm"
+Processing: "data/input/6.2.15.pgm"
+CannyEdge opened: "data/input/6.2.15.pgm" successfully!
+Saved image: "data/output/6.2.15_CannyEdge.pgm"
+Processing: "data/input/6.2.16.pgm"
+CannyEdge opened: "data/input/6.2.16.pgm" successfully!
+Saved image: "data/output/6.2.16_CannyEdge.pgm"
+Processing: "data/input/6.2.17.pgm"
+CannyEdge opened: "data/input/6.2.17.pgm" successfully!
+Saved image: "data/output/6.2.17_CannyEdge.pgm"
+Processing: "data/input/6.2.18.pgm"
+CannyEdge opened: "data/input/6.2.18.pgm" successfully!
+Saved image: "data/output/6.2.18_CannyEdge.pgm"
+Processing: "data/input/6.2.19.pgm"
+CannyEdge opened: "data/input/6.2.19.pgm" successfully!
+Saved image: "data/output/6.2.19_CannyEdge.pgm"
+Processing: "data/input/6.2.20.pgm"
+CannyEdge opened: "data/input/6.2.20.pgm" successfully!
+Saved image: "data/output/6.2.20_CannyEdge.pgm"
+Processing: "data/input/6.2.21.pgm"
+CannyEdge opened: "data/input/6.2.21.pgm" successfully!
+Saved image: "data/output/6.2.21_CannyEdge.pgm"
+Processing: "data/input/6.2.22.pgm"
+CannyEdge opened: "data/input/6.2.22.pgm" successfully!
+Saved image: "data/output/6.2.22_CannyEdge.pgm"
+Processing: "data/input/6.2.23.pgm"
+CannyEdge opened: "data/input/6.2.23.pgm" successfully!
+Saved image: "data/output/6.2.23_CannyEdge.pgm"
+Processing: "data/input/6.2.24.pgm"
+CannyEdge opened: "data/input/6.2.24.pgm" successfully!
+Saved image: "data/output/6.2.24_CannyEdge.pgm"
+Processing: "data/input/6.2.25.pgm"
+CannyEdge opened: "data/input/6.2.25.pgm" successfully!
+Saved image: "data/output/6.2.25_CannyEdge.pgm"
+Processing: "data/input/6.2.26.pgm"
+CannyEdge opened: "data/input/6.2.26.pgm" successfully!
+Saved image: "data/output/6.2.26_CannyEdge.pgm"
+Processing: "data/input/6.2.27.pgm"
+CannyEdge opened: "data/input/6.2.27.pgm" successfully!
+Saved image: "data/output/6.2.27_CannyEdge.pgm"
+Processing: "data/input/6.2.28.pgm"
+CannyEdge opened: "data/input/6.2.28.pgm" successfully!
+Saved image: "data/output/6.2.28_CannyEdge.pgm"
+Processing: "data/input/6.2.29.pgm"
+CannyEdge opened: "data/input/6.2.29.pgm" successfully!
+Saved image: "data/output/6.2.29_CannyEdge.pgm"
+Processing: "data/input/6.2.30.pgm"
+CannyEdge opened: "data/input/6.2.30.pgm" successfully!
+Saved image: "data/output/6.2.30_CannyEdge.pgm"
+Processing: "data/input/6.2.31.pgm"
+CannyEdge opened: "data/input/6.2.31.pgm" successfully!
+Saved image: "data/output/6.2.31_CannyEdge.pgm"
+Processing: "data/input/6.2.32.pgm"
+CannyEdge opened: "data/input/6.2.32.pgm" successfully!
+Saved image: "data/output/6.2.32_CannyEdge.pgm"
+Processing: "data/input/6.3.01.pgm"
+CannyEdge opened: "data/input/6.3.01.pgm" successfully!
+Saved image: "data/output/6.3.01_CannyEdge.pgm"
+Processing: "data/input/6.3.02.pgm"
+CannyEdge opened: "data/input/6.3.02.pgm" successfully!
+Saved image: "data/output/6.3.02_CannyEdge.pgm"
+Processing: "data/input/6.3.03.pgm"
+CannyEdge opened: "data/input/6.3.03.pgm" successfully!
+Saved image: "data/output/6.3.03_CannyEdge.pgm"
+Processing: "data/input/6.3.04.pgm"
+CannyEdge opened: "data/input/6.3.04.pgm" successfully!
+Saved image: "data/output/6.3.04_CannyEdge.pgm"
+Processing: "data/input/6.3.05.pgm"
+CannyEdge opened: "data/input/6.3.05.pgm" successfully!
+Saved image: "data/output/6.3.05_CannyEdge.pgm"
+Processing: "data/input/6.3.06.pgm"
+CannyEdge opened: "data/input/6.3.06.pgm" successfully!
+Saved image: "data/output/6.3.06_CannyEdge.pgm"
+Processing: "data/input/6.3.07.pgm"
+CannyEdge opened: "data/input/6.3.07.pgm" successfully!
+Saved image: "data/output/6.3.07_CannyEdge.pgm"
+Processing: "data/input/6.3.08.pgm"
+CannyEdge opened: "data/input/6.3.08.pgm" successfully!
+Saved image: "data/output/6.3.08_CannyEdge.pgm"
+Processing: "data/input/6.3.09.pgm"
+CannyEdge opened: "data/input/6.3.09.pgm" successfully!
+Saved image: "data/output/6.3.09_CannyEdge.pgm"
+Processing: "data/input/6.3.10.pgm"
+CannyEdge opened: "data/input/6.3.10.pgm" successfully!
+Saved image: "data/output/6.3.10_CannyEdge.pgm"
+Processing: "data/input/6.3.11.pgm"
+CannyEdge opened: "data/input/6.3.11.pgm" successfully!
+Saved image: "data/output/6.3.11_CannyEdge.pgm"
+Processing: "data/input/7.1.01.pgm"
+CannyEdge opened: "data/input/7.1.01.pgm" successfully!
+Saved image: "data/output/7.1.01_CannyEdge.pgm"
+Processing: "data/input/7.1.02.pgm"
+CannyEdge opened: "data/input/7.1.02.pgm" successfully!
+Saved image: "data/output/7.1.02_CannyEdge.pgm"
+Processing: "data/input/7.1.03.pgm"
+CannyEdge opened: "data/input/7.1.03.pgm" successfully!
+Saved image: "data/output/7.1.03_CannyEdge.pgm"
+Processing: "data/input/7.1.04.pgm"
+CannyEdge opened: "data/input/7.1.04.pgm" successfully!
+Saved image: "data/output/7.1.04_CannyEdge.pgm"
+Processing: "data/input/7.1.05.pgm"
+CannyEdge opened: "data/input/7.1.05.pgm" successfully!
+Saved image: "data/output/7.1.05_CannyEdge.pgm"
+Processing: "data/input/7.1.06.pgm"
+CannyEdge opened: "data/input/7.1.06.pgm" successfully!
+Saved image: "data/output/7.1.06_CannyEdge.pgm"
+Processing: "data/input/7.1.07.pgm"
+CannyEdge opened: "data/input/7.1.07.pgm" successfully!
+Saved image: "data/output/7.1.07_CannyEdge.pgm"
+Processing: "data/input/7.1.08.pgm"
+CannyEdge opened: "data/input/7.1.08.pgm" successfully!
+Saved image: "data/output/7.1.08_CannyEdge.pgm"
+Processing: "data/input/7.1.09.pgm"
+CannyEdge opened: "data/input/7.1.09.pgm" successfully!
+Saved image: "data/output/7.1.09_CannyEdge.pgm"
+Processing: "data/input/7.1.10.pgm"
+CannyEdge opened: "data/input/7.1.10.pgm" successfully!
+Saved image: "data/output/7.1.10_CannyEdge.pgm"
+Processing: "data/input/7.2.01.pgm"
+CannyEdge opened: "data/input/7.2.01.pgm" successfully!
+Saved image: "data/output/7.2.01_CannyEdge.pgm"
+Processing: "data/input/boat.512.pgm"
+CannyEdge opened: "data/input/boat.512.pgm" successfully!
+Saved image: "data/output/boat.512_CannyEdge.pgm"
+Processing: "data/input/gray21.512.pgm"
+CannyEdge opened: "data/input/gray21.512.pgm" successfully!
+Saved image: "data/output/gray21.512_CannyEdge.pgm"
+Processing: "data/input/house.pgm"
+CannyEdge opened: "data/input/house.pgm" successfully!
+Saved image: "data/output/house_CannyEdge.pgm"
+Processing: "data/input/motion01.512.pgm"
+CannyEdge opened: "data/input/motion01.512.pgm" successfully!
+Saved image: "data/output/motion01.512_CannyEdge.pgm"
+Processing: "data/input/motion02.512.pgm"
+CannyEdge opened: "data/input/motion02.512.pgm" successfully!
+Saved image: "data/output/motion02.512_CannyEdge.pgm"
+Processing: "data/input/motion03.512.pgm"
+CannyEdge opened: "data/input/motion03.512.pgm" successfully!
+Saved image: "data/output/motion03.512_CannyEdge.pgm"
+Processing: "data/input/motion04.512.pgm"
+CannyEdge opened: "data/input/motion04.512.pgm" successfully!
+Saved image: "data/output/motion04.512_CannyEdge.pgm"
+Processing: "data/input/motion05.512.pgm"
+CannyEdge opened: "data/input/motion05.512.pgm" successfully!
+Saved image: "data/output/motion05.512_CannyEdge.pgm"
+Processing: "data/input/motion06.512.pgm"
+CannyEdge opened: "data/input/motion06.512.pgm" successfully!
+Saved image: "data/output/motion06.512_CannyEdge.pgm"
+Processing: "data/input/motion07.512.pgm"
+CannyEdge opened: "data/input/motion07.512.pgm" successfully!
+Saved image: "data/output/motion07.512_CannyEdge.pgm"
+Processing: "data/input/motion08.512.pgm"
+CannyEdge opened: "data/input/motion08.512.pgm" successfully!
+Saved image: "data/output/motion08.512_CannyEdge.pgm"
+Processing: "data/input/motion09.512.pgm"
+CannyEdge opened: "data/input/motion09.512.pgm" successfully!
+Saved image: "data/output/motion09.512_CannyEdge.pgm"
+Processing: "data/input/motion10.512.pgm"
+CannyEdge opened: "data/input/motion10.512.pgm" successfully!
+Saved image: "data/output/motion10.512_CannyEdge.pgm"
+Processing: "data/input/ruler.512.pgm"
+CannyEdge opened: "data/input/ruler.512.pgm" successfully!
+Saved image: "data/output/ruler.512_CannyEdge.pgm"
+Processing: "data/input/texmos1.p512.pgm"
+CannyEdge opened: "data/input/texmos1.p512.pgm" successfully!
+Saved image: "data/output/texmos1.p512_CannyEdge.pgm"
+Processing: "data/input/texmos2.p512.pgm"
+CannyEdge opened: "data/input/texmos2.p512.pgm" successfully!
+Saved image: "data/output/texmos2.p512_CannyEdge.pgm"
+Processing: "data/input/texmos2.s512.pgm"
+CannyEdge opened: "data/input/texmos2.s512.pgm" successfully!
+Saved image: "data/output/texmos2.s512_CannyEdge.pgm"
+Processing: "data/input/texmos3.p512.pgm"
+CannyEdge opened: "data/input/texmos3.p512.pgm" successfully!
+Saved image: "data/output/texmos3.p512_CannyEdge.pgm"
+Processing: "data/input/texmos3.s512.pgm"
+CannyEdge opened: "data/input/texmos3.s512.pgm" successfully!
+Saved image: "data/output/texmos3.s512_CannyEdge.pgm"
+Processing: "data/input/texmos3b.p512.pgm"
+CannyEdge opened: "data/input/texmos3b.p512.pgm" successfully!
+Saved image: "data/output/texmos3b.p512_CannyEdge.pgm"
