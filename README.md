@@ -2,7 +2,7 @@
 
 ## Description
 
-Canny Edge image filter with Cuda at scale (batch files processing).
+Canny Edge detection image filter with Cuda at scale (batch files processing).
 
 ## Prerequisites
 ```
